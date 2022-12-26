@@ -28,7 +28,7 @@ const getTeamToBeAssignedTo = (messageContent) => {
     }
   }
 
-  if (messageContent.includes('error') || messageContent.includes('selfhosted') || messageContent.includes('translation') || messageContent.includes('self')) {
+  if (messageContent.includes('error') || messageContent.includes('translation')) {
     return {
       teamId: teamIDs.engineering,
       label: ['support-query']
